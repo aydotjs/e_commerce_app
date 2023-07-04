@@ -14,7 +14,7 @@ dotenv.config({
 app.use(express.json())
 const PORT = process.env.PORT || 7000;
 
-app.use("/api/user", authRouter)
+app.use("/api/users", authRouter)
 // starting up my server
 app.listen(PORT, () => {
   console.log(`SERVER HAS STARTED LISTENING ON PORT ${PORT}`);
